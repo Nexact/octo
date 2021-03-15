@@ -1,0 +1,15 @@
+[package]
+name = "octo"
+version = "0.1.0"
+authors = ["nex"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+atom_syndication = "0.9.1"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+handlebars = "*"
+serde_json = "*"
+serde = {version = "*", features = ["derive"] }
