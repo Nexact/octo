@@ -15,19 +15,9 @@ jobs:
         with:
           command: build
           args: --release --all-features
-  job_2:
-    name: Run
-    needs: job_1
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions-rs/cargo@v1
         with:
           command: run
-  job_3:
-    name: Upload
-    needs: job_2
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/upload-artifact@v2
         with: 
           path: artifact/urls.html
