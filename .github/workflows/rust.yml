@@ -20,5 +20,5 @@ jobs:
           command: run
       - uses: actions/upload-artifact@v2
         with: 
-          path: artifact/urls.html
+          path: urls.html
     
