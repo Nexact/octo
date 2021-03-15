@@ -3,7 +3,7 @@ on: [push]
 name: Octo
 
 jobs:
-  build_artefact:
+  job_1:
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -15,14 +15,14 @@ jobs:
         with:
           command: build
           args: --release --all-features
-  run_artefact:
+  job_2:
     name: Run
     runs-on: ubuntu-latest
     steps:
       - uses: actions-rs/cargo@v1
         with:
           command: run
-  upload_artefact:
+  job_3:
     name: Upload
     runs-on: ubuntu-latest
     steps:
